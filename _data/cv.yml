@@ -68,7 +68,7 @@ cv:
         publisher: ICASSP
         releaseDate: 2026
 
-      - title: SoK: Can Synthetic Images Replace Real Data? A Survey of Utility and Privacy of Synthetic Image Generation
+      - title: "SoK: Can Synthetic Images Replace Real Data? A Survey of Utility and Privacy of Synthetic Image Generation"
         authors:
           - Yunsung Chung
           - Yunbei Zhang
@@ -77,7 +77,7 @@ cv:
         publisher: USENIX Security
         releaseDate: 2025
 
-      - title: SOFA: Deep Learning Framework for Simulating and Optimizing Atrial Fibrillation Ablation
+      - title: "SOFA: Deep Learning Framework for Simulating and Optimizing Atrial Fibrillation Ablation"
         authors:
           - Yunsung Chung
           - Chanho Lim
