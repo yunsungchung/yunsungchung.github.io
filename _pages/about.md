@@ -34,4 +34,4 @@ My research focuses on **generative and predictive machine learning for healthca
 
 I am currently interested in building machine learning systems that work under sparse and noisy clinical supervision while remaining useful in real clinical workflows.
 
-You can find my publications on the [publications page](/publications/) and my full list on [Google Scholar](https://scholar.google.com/citations?user=U_KHWtMAAAAJ&hl=en).
+You can find my publications on the [publications page](/publications/) and my full list on [Google Scholar](https://scholar.google.com/citations?user=U_KHWtMAAAAJ&hl=en). Open to Research Scientist / Applied Scientist roles.
