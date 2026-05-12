@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-02-25'
+  last_updated: '2026-04-01'
 papers:
   U_KHWtMAAAAJ:9yKSN-GCB0IC:
-    citations: 5
+    citations: 7
     title: 'From majority to minority: a diffusion-based augmentation for underrepresented groups in skin lesion analysis'
     year: '2024'
   U_KHWtMAAAAJ:IjCSPb-OGe4C:
@@ -33,6 +33,10 @@ papers:
     citations: 0
     title: 'ID: 4348752 GENERALIZABILITY OF DEEP LEARNING BASED AF DETECTION MODEL USING 30-SECOND SINGLE-LEAD ECG FROM CONSUMER-GRADE WEARABLES'
     year: '2025'
+  U_KHWtMAAAAJ:_FxGoFyzp5QC:
+    citations: 0
+    title: 26-A-17085-ACC AN INTERPRETABLE MACHINE LEARNING TOOL FOR PERSONALIZED ANTICOAGULATION DECISIONS IN ATRIAL FIBRILLATION
+    year: '2026'
   U_KHWtMAAAAJ:d1gkVwhDpl0C:
     citations: 0
     title: PO-04-085 AN AI MODEL PREDICTING AF RECURRENCE POST-ABLATION USING DAY-1 POST-OP ECG STRIP
@@ -46,13 +50,17 @@ papers:
     title: 'Bridging the Gap: Synthetic Data Augmentation through Inversion and Distribution Matching for Few-shot Learning'
     year: '2024'
   U_KHWtMAAAAJ:u-x6o8ySG0sC:
-    citations: 11
+    citations: 13
     title: 'FBA-Net: Foreground and background aware contrastive learning for semi-supervised atrium segmentation'
     year: '2023'
   U_KHWtMAAAAJ:u5HHmVD_uO8C:
     citations: 1
     title: Generalizability and Clinical Implications of Electrocardiogram Denoising with Cardio-NAFNet
     year: Unknown Year
+  U_KHWtMAAAAJ:ufrVoPGSRksC:
+    citations: 0
+    title: '26-A-20731-ACC COMPLIANCE WITH WEARABLE DEVICES IN CARDIOVASCULAR MONITORING: INSIGHTS FROM HEARTBEAT'
+    year: '2026'
   U_KHWtMAAAAJ:zYLM7Y9cAGgC:
     citations: 0
     title: 'PO-07-205 AF MONITORING WITH DEEP LEARNING: A NOVEL DYNAMIC DEEP LEARNING MODEL USING SINGLE LEAD ECGS TO DETECT UNDETECTED AF EPISODES'
