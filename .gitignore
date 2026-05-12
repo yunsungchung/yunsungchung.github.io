@@ -8,6 +8,10 @@ _site
 .sass-cache
 .tweet-cache
 .venv
+AGENTS.md
+CLAUDE.md
+agents.md
+claude.md
 assets/libs/
 assets/rendercv/rendercv_output/*.typ
 Gemfile.lock
