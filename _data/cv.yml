@@ -68,6 +68,38 @@ cv:
         publisher: ICASSP
         releaseDate: 2026
 
+      - title: Auditing Long-Horizon Patient Trajectory Modeling in EHR Foundation Model Benchmarks
+        authors:
+          - Yunsung Chung
+          - Han Feng
+          - Nassir Marrouche
+          - Jihun Hamm
+        publisher: Under review at NeurIPS
+        releaseDate: 2026
+
+      - title: "CRAFT: Clinical Reward-Aligned Finetuning for Medical Image Synthesis"
+        authors:
+          - Yunsung Chung
+          - Alex El Darzi
+          - Carlo El Khoury
+          - Han Feng
+          - Nassir Marrouche
+          - Jihun Hamm
+        publisher: Under review at NeurIPS
+        releaseDate: 2026
+
+      - title: Intervention-Aware Clinical World Model for Post-OP Outcome Forecasting in Cardiology
+        authors:
+          - Yunsung Chung
+          - Yingshuo Liu
+          - Abboud F Hassan
+          - Han Feng
+          - Mary M Maleckar
+          - Nassir Marrouche
+          - Jihun Hamm
+        publisher: Under review at MICCAI
+        releaseDate: 2026
+
       - title: "SoK: Can Synthetic Images Replace Real Data? A Survey of Utility and Privacy of Synthetic Image Generation"
         authors:
           - Yunsung Chung
