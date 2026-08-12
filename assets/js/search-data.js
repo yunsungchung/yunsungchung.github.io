@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "Selected research systems, benchmarks, and clinical machine-learning projects.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
         },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
@@ -384,36 +377,11 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-intervention-aware-clinical-world-model-for-post-op-outcome-forecasting-in-cardiology-was-accepted-at-the-miccai-2026-workshop-on-medical-world-models-mwm",
           title: 'Our paper, Intervention-Aware Clinical World Model for Post-Op Outcome Forecasting in Cardiology, was...',
           description: "",
-          section: "News",},{id: "projects-craft",
-          title: 'CRAFT',
-          description: "Clinical reward-aligned finetuning for medical image synthesis",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/craft/";
-            },},{id: "projects-ehrdyn",
-          title: 'EHRDyn',
-          description: "A public benchmark for offline reinforcement learning and off-policy evaluation from longitudinal EHRs",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/ehrdyn/";
-            },},{id: "projects-intervention-aware-clinical-world-model",
-          title: 'Intervention-Aware Clinical World Model',
-          description: "Postoperative outcome forecasting in cardiology with recorded intervention context",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/intervention-aware-world-model/";
-            },},{id: "projects-researchwiki-amp-researchomx",
+          section: "News",},{id: "projects-researchwiki-amp-researchomx",
           title: 'ResearchWiki &amp;amp; ResearchOMX',
           description: "Human-governed infrastructure for reproducible, agent-assisted research",
           section: "Projects",handler: () => {
               window.location.href = "/projects/researchwiki-researchomx/";
-            },},{id: "projects-sofa",
-          title: 'SOFA',
-          description: "Deep learning for simulating and optimizing atrial-fibrillation ablation",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/sofa/";
-            },},{id: "projects-sparse-label-wearable-ppg",
-          title: 'Sparse-Label Wearable PPG',
-          description: "Temporal-decay learning for dense wearable signals paired with infrequent clinical labels",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/sparse-label-wearable-ppg/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
