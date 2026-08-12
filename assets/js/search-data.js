@@ -374,6 +374,9 @@ ninja.data = [{
           section: "News",},{id: "news-1-paper-accepted-at-icassp-2026",
           title: '1 paper accepted at ICASSP 2026.',
           description: "",
+          section: "News",},{id: "news-our-paper-intervention-aware-clinical-world-model-for-post-op-outcome-forecasting-in-cardiology-was-accepted-at-the-miccai-2026-workshop-on-medical-world-models-mwm",
+          title: 'Our paper, Intervention-Aware Clinical World Model for Post-Op Outcome Forecasting in Cardiology, was...',
+          description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
@@ -419,6 +422,11 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-researchwiki-and-researchomx",
+          title: 'ResearchWiki and ResearchOMX',
+          description: "Human-governed infrastructure for reproducible, agent-assisted research",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/researchwiki-researchomx/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
