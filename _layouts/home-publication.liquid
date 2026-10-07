@@ -1,0 +1,24 @@
+<article class="publication-row">
+  <div class="publication-meta">
+    <span class="publication-venue">
+      {%- if entry.abbr == 'MWM' %}MICCAI MWM{% else %}{{ entry.abbr }}{% endif -%}
+    </span>
+    {% unless entry.note contains 'Under review' -%}
+      <span>{{ entry.year }}</span>
+    {%- endunless %}
+  </div>
+  <div>
+    <h3>
+      <a href="{{ '/publications/' | relative_url }}#{{ entry.key }}">{{ entry.title }}</a>
+    </h3>
+    {% if entry.note %}
+      <p class="publication-note">{{ entry.note }}</p>
+    {% endif %}
+  </div>
+  <a
+    class="publication-arrow"
+    href="{{ '/publications/' | relative_url }}#{{ entry.key }}"
+    aria-label="Publication details: {{ entry.title | escape }}"
+    ><span aria-hidden="true">↗</span></a
+  >
+</article>

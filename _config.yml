@@ -9,7 +9,7 @@ last_name: Chung
 contact_note: >
   Feel free to reach out via email for collaboration or research discussions.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal academic website of Yunsung Chung. Research in longitudinal EHR modeling, uncertainty-aware clinical AI, wearable biosignals, and medical generative models.
+  Yunsung Chung researches patient state modeling, clinical world models, and machine learning for multimodal health data, simulation, and decision-making.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -289,7 +289,7 @@ scholar:
   details_dir: bibliography
   details_link: Details
 
-  query: "@*"
+  query: "@*[hidden!=true]"
   group_by: year
   group_order: descending
 
@@ -320,6 +320,12 @@ filtered_bibtex_keywords:
     google_scholar_id,
     hal,
     html,
+    hidden,
+    home_featured,
+    home_title,
+    home_area,
+    home_art,
+    home_summary,
     inspirehep_id,
     pdf,
     pmid,

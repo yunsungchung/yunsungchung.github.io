@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    {% include metadata.liquid %}
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta name="color-scheme" content="light dark">
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232a4bce'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial' font-size='30' fill='white'%3Eyc%3C/text%3E%3C/svg%3E"
+    >
+    <script src="{{ '/assets/js/home.js' | relative_url | bust_file_cache }}"></script>
+    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url | bust_file_cache }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="Yunsung Chung home"
+          ><span class="monogram" aria-hidden="true">yc.</span> Yunsung Chung</a
+        >
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="{{ '/' | relative_url }}#research">Research</a>
+          <a
+            href="{{ '/publications/' | relative_url }}"
+            {% if page.permalink == '/publications/' %}
+              aria-current="page"
+            {% endif %}
+            >Publications</a
+          >
+          <a href="{{ '/' | relative_url }}#about">About</a>
+          <a class="nav-cv" href="{{ site.data.socials.cv_pdf | relative_url }}">CV <span aria-hidden="true">↗</span></a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch color theme" hidden>
+          <svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 14.1A8.5 8.5 0 0 1 9.9 4a8.5 8.5 0 1 0 10.2 10.1Z"/>
+          </svg>
+          <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2V4M12 20V22M2 12H4M20 12H22M5 5L6.5 6.5M17.5 17.5L19 19M5 19L6.5 17.5M17.5 6.5L19 5"/>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main" class="shell" tabindex="-1">
+      {{ content }}
+    </main>
+    <footer class="site-footer shell">
+      <p>© {{ site.time | date: '%Y' }} Yunsung Chung</p>
+      <p>
+        Built with Jekyll &amp; al-folio <span aria-hidden="true">·</span>
+        <a href="https://github.com/yunsungchung/yunsungchung.github.io">Source <span aria-hidden="true">↗</span></a>
+      </p>
+      <a href="#main">Back to top ↑</a>
+    </footer>
+    {% if site.enable_google_analytics and jekyll.environment == 'production' and site.enable_cookie_consent != true %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script defer src="{{ '/assets/js/google-analytics-setup.js' | relative_url }}"></script>
+    {% endif %}
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<article class="archive-paper" id="{{ entry.key }}">
+  <div class="archive-paper-meta">
+    <span class="archive-venue">
+      {%- if entry.note contains 'Under review' %}Manuscript{% elsif entry.abbr == 'MWM' %}MICCAI MWM{% else %}{{ entry.abbr }}{% endif -%}
+    </span>
+    {% if entry.note -%}
+      <span class="archive-status">{{ entry.note }}</span>
+    {%- endif %}
+  </div>
+  <div class="archive-paper-body">
+    <h3>{{ entry.title }}</h3>
+    <p class="archive-authors">
+      {%- for author in entry.author_array -%}
+        {%- unless forloop.first %}, {% endunless -%}
+        {%- assign author_last = author.last | regex_replace: '[*∗†‡§¶‖&^]', '' -%}
+        {%- assign coauthor_key = author_last | downcase | remove_accents -%}
+        {%- assign coauthor_url = null -%}
+        {%- for coauthor in site.data.coauthors[coauthor_key] -%}
+          {%- if coauthor.firstname contains author.first -%}
+            {%- assign coauthor_url = coauthor.url -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- if site.scholar.last_name contains author_last and site.scholar.first_name contains author.first -%}
+          <strong>
+            {{- author.first }}
+            {{ author.last -}}
+          </strong>
+        {%- elsif author_last == 'others' -%}
+          et al.
+        {%- elsif coauthor_url -%}
+          <a href="{{ coauthor_url }}">
+            {{- author.first }}
+            {{ author.last -}}
+          </a>
+        {%- else -%}
+          {{ author.first }}
+          {{ author.last }}
+        {%- endif -%}
+      {%- endfor -%}
+    </p>
+    {% if entry.journal %}
+      <p class="archive-journal">{{ entry.journal }}</p>
+    {% elsif entry.booktitle %}
+      <p class="archive-journal">{{ entry.booktitle }}</p>
+    {% endif %}
+    {% if entry.pdf or entry.doi or entry.html or entry.code %}
+      <div class="archive-links">
+        {% if entry.pdf -%}
+          <a href="{% if entry.pdf contains '://' %}{{ entry.pdf }}{% else %}{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}{% endif %}"
+            >Paper <span aria-hidden="true">↗</span></a
+          >
+        {%- endif %}
+        {% if entry.code -%}
+          <a href="{{ entry.code }}">Code <span aria-hidden="true">↗</span></a>
+        {%- endif %}
+        {% if entry.doi -%}
+          <a href="https://doi.org/{{ entry.doi }}"
+            >DOI <span aria-hidden="true">↗</span>
+            {%- if entry.html == blank and entry.pdf == blank -%}
+              <span class="visually-hidden"> for {{ entry.title }}</span>
+            {%- endif -%}
+          </a>
+        {%- endif %}
+        {% assign doi_url = entry.doi | prepend: 'https://doi.org/' %}
+        {% if entry.html and entry.html != doi_url -%}
+          <a href="{% if entry.html contains '://' %}{{ entry.html }}{% else %}{{ entry.html | prepend: '/assets/html/' | relative_url }}{% endif %}"
+            >Publication page <span aria-hidden="true">↗</span></a
+          >
+        {%- endif %}
+      </div>
+    {% endif %}
+    {% if entry.abstract %}
+      <details class="archive-abstract">
+        <summary>
+          Abstract<span class="visually-hidden"> for {{ entry.title }}</span>
+        </summary>
+        <p>{{ entry.abstract }}</p>
+      </details>
+    {% endif %}
+  </div>
+</article>

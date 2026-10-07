@@ -1,0 +1,32 @@
+<svg viewBox="0 0 520 180" xmlns="http://www.w3.org/2000/svg" fill="none" focusable="false">
+  {% case include.kind %}
+    {% when 'trajectories' %}
+      <path class="art-grid" d="M48 45H472M48 90H472M48 135H472M120 25V155M220 25V155M320 25V155M420 25V155"/>
+      <path class="art-line secondary" d="M48 121C99 121 120 70 173 88S221 109 260 88S325 42 372 51S420 69 472 37"/>
+      <path class="art-line" d="M48 121C99 121 120 70 173 88S221 109 260 88S337 133 384 108S432 105 472 88"/>
+      <path class="art-line tertiary" d="M260 88C322 87 345 103 386 124S435 134 472 141"/>
+      <path class="art-guide" d="M260 26V155"/>
+      <circle class="art-node" cx="260" cy="88" r="6"/>
+      <text class="art-label" x="48" y="25">PATIENT HISTORY</text><text class="art-label" x="298" y="25">POSSIBLE FUTURES</text>
+    {% when 'simulation' %}
+      <path class="art-grid" d="M40 45H480M40 90H480M40 135H480"/>
+      <rect class="art-box" x="54" y="58" width="100" height="64" rx="8"/><rect class="art-box" x="210" y="58" width="100" height="64" rx="8"/><rect class="art-box" x="366" y="58" width="100" height="64" rx="8"/>
+      <path class="art-line" d="M155 90H209M311 90H365"/><path class="art-line secondary" d="M416 123V149H104V123"/>
+      <path class="art-line" d="M198 84L205 90L198 96M354 84L361 90L354 96"/>
+      <text class="art-text" x="104" y="94" text-anchor="middle">State</text><text class="art-text" x="260" y="94" text-anchor="middle">Action</text><text class="art-text" x="416" y="94" text-anchor="middle">Next state</text>
+      <text class="art-label" x="260" y="35" text-anchor="middle">PARTIAL RECORDS · EXACT REFERENCES</text>
+    {% when 'generation' %}
+      <rect class="art-box" x="70" y="42" width="104" height="104" rx="8"/>
+      <path class="art-grid" d="M84 57H160M84 72H160M84 87H160M84 102H160M84 117H160M84 132H160M92 50V138M107 50V138M122 50V138M137 50V138M152 50V138"/>
+      <path class="art-line secondary" d="M190 94H270M259 88L266 94L259 100"/>
+      <rect class="art-box" x="286" y="42" width="104" height="104" rx="8"/>
+      <ellipse class="art-line" cx="338" cy="94" rx="28" ry="37"/><path class="art-line secondary" d="M338 60C310 78 321 115 338 129C359 105 355 77 338 60Z"/>
+      <circle class="art-node" cx="423" cy="94" r="5"/>
+      <text class="art-label" x="260" y="25" text-anchor="middle">GENERATION · CLINICAL REWARD · FINETUNING</text>
+    {% when 'signals' %}
+      <path class="art-grid" d="M48 58H472M48 122H472"/>
+      <path class="art-line secondary" d="M48 58H101L110 45L119 75L131 25L143 90L154 58H219L229 45L239 75L251 25L263 90L274 58H339L349 45L359 75L371 25L383 90L395 58H472"/>
+      <path class="art-line" d="M48 135C73 135 79 85 99 100S117 132 137 123S160 135 179 135S205 85 225 100S243 132 263 123S286 135 305 135S331 85 351 100S369 132 389 123S412 135 472 135"/>
+      <text class="art-label" x="48" y="22">ECG</text><text class="art-label" x="48" y="100">PPG</text>
+  {% endcase %}
+</svg>

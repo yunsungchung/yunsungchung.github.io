@@ -1,0 +1,7 @@
+{% if include.entry.note contains 'Under review' %}
+  {{- include.entry.note -}}
+{% else %}
+  {% if include.entry.abbr == 'MWM' %}MICCAI MWM{% else %}{{ include.entry.abbr }}{% endif %}
+  {{ include.entry.year -}}
+  {%- if include.entry.note %} · {{ include.entry.note }}{% endif %}
+{% endif %}

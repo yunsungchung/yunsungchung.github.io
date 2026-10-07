@@ -7,4 +7,4 @@ related_posts: false
 
 Our paper, _Intervention-Aware Clinical World Model for Post-Op Outcome
 Forecasting in Cardiology_, was accepted at the MICCAI 2026 Workshop on
-Medical World Models (MWM).
+Medical World Models (MWM) as an oral presentation.

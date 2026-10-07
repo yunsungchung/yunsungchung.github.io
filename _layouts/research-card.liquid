@@ -1,0 +1,28 @@
+<article class="research-card">
+  <div class="research-art art-{{ entry.home_art }}" aria-hidden="true">
+    {% include research-art.liquid kind=entry.home_art %}
+  </div>
+  <div class="research-card-content">
+    <p class="eyebrow">{{ entry.home_area }}</p>
+    <h3>
+      <a href="{{ '/publications/' | relative_url }}#{{ entry.key }}">{{ entry.home_title }}</a>
+    </h3>
+    <p class="research-summary">{{ entry.home_summary }}</p>
+    <p class="paper-status">{% include home-paper-status.liquid entry=entry %}</p>
+    <div class="paper-links">
+      {% if entry.pdf %}
+        <a
+          href="{% if entry.pdf contains '://' %}{{ entry.pdf }}{% else %}{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}{% endif %}"
+          aria-label="Read the {{ entry.home_title }} paper"
+          >Paper <span aria-hidden="true">↗</span></a
+        >
+      {% endif %}
+      {% if entry.code -%}
+        <a href="{{ entry.code }}" aria-label="Code for {{ entry.home_title }}">Code <span aria-hidden="true">↗</span></a>
+      {%- endif %}
+      <a href="{{ '/publications/' | relative_url }}#{{ entry.key }}" aria-label="Publication details for {{ entry.home_title }}"
+        >Details <span aria-hidden="true">→</span></a
+      >
+    </div>
+  </div>
+</article>
