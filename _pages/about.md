@@ -6,8 +6,7 @@ description: Machine learning for patient state modeling, clinical world models,
 ---
 
 I am a PhD candidate in Computer Science at Tulane University (TRIAD Lab,
-advised by [Prof. Jihun Hamm](https://www.cs.tulane.edu/~jhamm3/)), with
-anticipated graduation in December 2026.
+advised by [Prof. Jihun Hamm](https://www.cs.tulane.edu/~jhamm3/)).
 
 I study how machine learning can represent patient state and model how it
 changes over time, bringing together longitudinal health records, wearable
