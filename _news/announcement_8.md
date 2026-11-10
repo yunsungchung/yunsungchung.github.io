@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, [EHRDyn: A Benchmark for Offline Reinforcement Learning from EHRs with Complementary Simulators](/publications/#chung2027ehrdyn), was accepted to the KDD 2027 Datasets and Benchmarks Track.
+Our paper, [EHRDyn: A Benchmark for Offline Reinforcement Learning from EHRs with Complementary Simulators](/publications/#chung2027ehrdyn), was accepted to KDD 2027.
