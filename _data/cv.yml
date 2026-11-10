@@ -65,7 +65,7 @@ cv:
           - Han Feng
           - Nassir Marrouche
           - Jihun Hamm
-        publisher: Under review at KDD
+        publisher: KDD 2027, Datasets and Benchmarks Track (Accepted)
         releaseDate: 2027
 
       - title: Weighted Temporal Decay Loss for Learning Wearable PPG Data with Sparse Clinical Labels
