@@ -380,7 +380,7 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-intervention-aware-clinical-world-model-for-post-op-outcome-forecasting-in-cardiology-was-accepted-at-the-miccai-2026-workshop-on-medical-world-models-mwm-as-an-oral-presentation",
           title: 'Our paper, Intervention-Aware Clinical World Model for Post-Op Outcome Forecasting in Cardiology, was...',
           description: "",
-          section: "News",},{id: "news-our-paper-ehrdyn-a-benchmark-for-offline-reinforcement-learning-from-ehrs-with-complementary-simulators-was-accepted-to-the-kdd-2027-datasets-and-benchmarks-track",
+          section: "News",},{id: "news-our-paper-ehrdyn-a-benchmark-for-offline-reinforcement-learning-from-ehrs-with-complementary-simulators-was-accepted-to-kdd-2027",
           title: 'Our paper, EHRDyn: A Benchmark for Offline Reinforcement Learning from EHRs with Complementary...',
           description: "",
           section: "News",},{id: "projects-researchwiki-amp-researchomx",
