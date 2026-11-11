@@ -19,9 +19,9 @@ cv:
         area: Computer Science
         studyType: PhD
         start_date: 2022-08
-        end_date: 2026-12
+        end_date: present
         highlights:
-          - Anticipated graduation: December 2026
+          - "Anticipated graduation: May 2027"
 
       - institution: The Australian National University
         location: Canberra, Australia
@@ -68,46 +68,54 @@ cv:
         publisher: KDD
         releaseDate: 2027
 
-      - title: Weighted Temporal Decay Loss for Learning Wearable PPG Data with Sparse Clinical Labels
+      - title: Reclassifying Single Lead Sinus Rhythm ECGs for Improved AF Recurrence Detection With Deep Learning
         authors:
+          - Yingshuo Liu
+          - Chanho Lim
+          - Ghassan Bidaoui
+          - Christian Massad
           - Yunsung Chung
-          - Keum San Chun
-          - Migyeong Gwak
           - et al.
-        publisher: ICASSP
+        publisher: "Circulation: Arrhythmia and Electrophysiology, e014659"
         releaseDate: 2026
-
-      - title: Auditing Long-Horizon Patient Trajectory Modeling in EHR Foundation Model Benchmarks
-        authors:
-          - Yunsung Chung
-          - Han Feng
-          - Nassir Marrouche
-          - Jihun Hamm
-        publisher: Under review at NeurIPS
-        releaseDate: 2026
-
-      - title: "CRAFT: Clinical Reward-Aligned Finetuning for Medical Image Synthesis"
-        authors:
-          - Yunsung Chung
-          - Alex El Darzi
-          - Carlo El Khoury
-          - Han Feng
-          - Nassir Marrouche
-          - Jihun Hamm
-        publisher: Under review at NeurIPS
-        releaseDate: 2026
+        url: https://doi.org/10.1161/CIRCEP.125.014659
 
       - title: Intervention-Aware Clinical World Model for Post–Op Outcome Forecasting in Cardiology
         authors:
           - Yunsung Chung
           - Yingshuo Liu
-          - Abboud F Hassan
+          - Abboud F. Hassan
           - Han Feng
-          - Mary M Maleckar
+          - Mary M. Maleckar
           - Nassir Marrouche
           - Jihun Hamm
-        publisher: MICCAI Workshop on Medical World Models (MWM) — Accepted
+        publisher: MICCAI Workshop on Medical World Models (MWM), oral presentation
         releaseDate: 2026
+
+      - title: Weighted Temporal Decay Loss for Learning Wearable PPG Data with Sparse Clinical Labels
+        authors:
+          - Yunsung Chung
+          - Keum San Chun
+          - Migyeong Gwak
+          - Han Feng
+          - Yingshuo Liu
+          - Chanho Lim
+          - Viswam Nathan
+          - Nassir Marrouche
+          - Sharanya Arcot Desai
+        publisher: ICASSP
+        releaseDate: 2026
+
+      - title: "SOFA: Deep Learning Framework for Simulating and Optimizing Atrial Fibrillation Ablation"
+        authors:
+          - Yunsung Chung
+          - Chanho Lim
+          - Ghassan Bidaoui
+          - Christian Massad
+          - Nassir Marrouche
+          - Jihun Hamm
+        publisher: MICCAI
+        releaseDate: 2025
 
       - title: "SoK: Can Synthetic Images Replace Real Data? A Survey of Utility and Privacy of Synthetic Image Generation"
         authors:
@@ -118,13 +126,61 @@ cv:
         publisher: USENIX Security
         releaseDate: 2025
 
-      - title: "SOFA: Deep Learning Framework for Simulating and Optimizing Atrial Fibrillation Ablation"
+      - title: "Bridging the Gap: Synthetic Data Augmentation through Inversion and Distribution Matching for Few-Shot Learning"
+        authors:
+          - Yunsung Chung
+          - Janet Wang
+          - Jihun Hamm
+        publisher: AI-ML Systems
+        releaseDate: 2024
+
+      - title: "From Majority to Minority: A Diffusion-Based Augmentation for Underrepresented Groups in Skin Lesion Analysis"
+        authors:
+          - Janet Wang
+          - Yunsung Chung
+          - Zhengming Ding
+          - Jihun Hamm
+        publisher: MICCAI Workshop
+        releaseDate: 2024
+
+      - title: "FBA-Net: Foreground and Background Aware Contrastive Learning for Semi-Supervised Atrium Segmentation"
         authors:
           - Yunsung Chung
           - Chanho Lim
+          - Chao Huang
+          - Nassir Marrouche
+          - Jihun Hamm
+        publisher: MICCAI Workshop
+        releaseDate: 2023
+
+      - title: "CRAFT: Clinical Reward-Aligned Finetuning for Medical Image Synthesis"
+        authors:
+          - Yunsung Chung
+          - Alex El Darzi
+          - Carlo El Khoury
+          - Han Feng
+          - Nassir Marrouche
+          - Jihun Hamm
+        publisher: Under review at ICLR
+        releaseDate: 2027
+
+      - title: "EHRGym: A Diagnostic Benchmark for Offline Reinforcement Learning"
+        authors:
+          - Yunsung Chung
+          - Han Feng
+          - Nassir Marrouche
+          - Jihun Hamm
+        publisher: Under review at ICLR
+        releaseDate: 2027
+
+      - title: Deep Learning-Based Translation from Wearable ECG to PPG for PPG-Only Cardiac Rhythm Classification
+        authors:
+          - Yingshuo Liu
+          - Alex El Darzi
+          - Yunsung Chung
           - et al.
-        publisher: MICCAI
-        releaseDate: 2025
+        publisher: Under review at npj Digital Medicine
+        releaseDate: 2026
 
     Awards:
       - title: FIRA RoboWorld Cup - 1st Place in Basketball
